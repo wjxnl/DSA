@@ -34,7 +34,7 @@ int dequeue(LQ *Q){
 
 int main(){
     LQ Q = {0, -1};
-    int choice, element;
+    int choice = 0, element;
 
     while(1){
         printf("\n Queue Operations \n");
