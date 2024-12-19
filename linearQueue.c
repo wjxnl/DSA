@@ -13,7 +13,7 @@ void enqueue(LQ *Q, int element){
         printf("Queue overflow\n");
     }
     else{
-        Q->rear++;
+        Q->rear++;          
         Q->data[Q->rear] = element;
         printf("%d is enqueued \n", element);
     }
