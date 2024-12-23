@@ -12,9 +12,8 @@ void enqueue(LQ *Q, int element){
     if(Q->rear == Max-1){
         printf("Queue overflow\n");
     }
-    else{
-        Q->rear++;          
-        Q->data[Q->rear] = element;
+    else{         
+        Q->data[++Q->rear] = element;
         printf("%d is enqueued \n", element);
     }
 }
