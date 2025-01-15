@@ -1,5 +1,5 @@
 #include<stdio.h>
-#define Max 5
+#define Max 10
 //define person as a structure
 typedef struct 
 {
@@ -24,7 +24,7 @@ int isEmpty(stack *s){
     if(s->tos == -1){
         return 1;
     }
-    return -1;
+    return 0;
 }
 
 //isFull function
@@ -32,7 +32,7 @@ int isFull(stack *s){
     if(s->tos == Max-1){
         return 1;
     }
-    return -1;
+    return 0;
 }
 
 //push function
@@ -87,17 +87,9 @@ int main(){
     stack s;
     initialiseStack(&s);
 
-    person p1 = {
-        "anusha", 20
-    };
-
-    person p2 = {
-        "joe", 15
-    };
-
-    person p3 = {
-        "jack", 25
-    };
+    person p1 = {"anusha", 20};
+    person p2 = {"joe", 15};
+    person p3 = {"jack", 25};
 
     printf("\n Initial stack \n");
     displayStack(&s);
